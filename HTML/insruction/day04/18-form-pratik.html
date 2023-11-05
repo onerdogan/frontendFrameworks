@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FORM PRATIK 1</title>
+    </head>
+    <body>
+        <h1>FORM PRATIK 1</h1>
+        <form>
+            <table>
+                <!-- tr*4>td*2 -->
+                <tr>
+                    <td>
+                        <label for="emailInput">E-posta</label>
+                    </td>
+                    <td>
+                        <input
+                            id="emailInput"
+                            type="email"
+                            placeholder="example@hotmail.com"
+                            name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passwordInput">Sifre</label>
+                    </td>
+                    <td>
+                        <input
+                            id="passwordInput"
+                            type="password"
+                            name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="guve">Guvenlik Kodu</label>
+                    </td>
+                    <td>
+                        <input
+                            id="guve"
+                            type="number"
+                            name="guve"
+                            value="35647"
+                            readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="submit"
+                            value="GONDER"
+                            style="display: inline-block; width: 100%"
+                            disabled />
+                    </td>
+                    <td>
+                        <input
+                            type="reset"
+                            value="TEMIZLE"
+                            style="display: inline-block; width: 100%" />
+                    </td>
+                </tr>
+            </table>
+        </form><br><hr><br>
+        <form >
+            <table>
+            
+                <tr>
+                    <td><label for="Adi">Adi</label></td>
+                    <td><input type="text" id="Adi" name="Adi"></td>
+                    <td><label for="hobiler"></label>Hobiler</td>
+                    <td rowspan="3"><input type="checkbox" id="futbol" value="futbol" name="hobiler" />
+                        <label for="futbol">Futbol</label>
+                        
+                        <br />
+                        <input type="checkbox" id="voleybol" value="voleybol" name="hobiler" />
+                        <label for="voleybol">Voleybol</label>
+                        <br />
+                        <input type="checkbox" id="basketbol" value="basketbol" name="hobiler" />
+                        <label for="basketbol">Basketbol</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Soyadi">Soyadi</label></td>
+                    <td><input type="
+                        text" id="Soyadi" name="Soyadi"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="cinsiyet">Cinsiyet</label></td>
+                    <td><input type="radio" id="erkek" value="erkek" name="cinsiyet" />
+                        <label for="erkek">Erkek</label>
+                        
+                        <input type="radio" id="kadin" value="kadin" name="cinsiyet" />
+                        <label for="kadin">Kadin</label></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="ilçe">ilçe</label></td>
+                    <td>
+                        <select id="ilçe">
+                            <option>  </option>
+                            <option> ula </option>
+                            <option> milas </option>
+                            <option> datça </option>
+                            
+                            </select>
+                    </td>
+                    <td><label for="foto"></label>Profil <br>Fotoğrafi</td>
+                    <td><input type="file" id="foto" name="foto" placeholder="Dosya Seçiniz"></td>
+                </tr>
+                <tr>
+                    <td ><label for="email"></label>Eposta</td>
+                    <td><input type="email" id="email" name="email"></td>
+                    <td><label for="born">Doğum
+                        <br> Tarihi</label></td>
+                    <td><input type="date" id="born" name="born"></td>
+                </tr>
+                <tr>
+                    <td><label for="site"></label>Kişisel Site</td>
+                    <td><input type="text" id="site" name="site"></td>
+                    <td><label for="adres"></label>Adres</td>
+                    <td rowspan="2"><textarea name="" id="" cols="20" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="Telefon"></label>Telefon</td>
+                    <td><input type="tel" id="Telefon" name="Telefon"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button>Kaydol</td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
