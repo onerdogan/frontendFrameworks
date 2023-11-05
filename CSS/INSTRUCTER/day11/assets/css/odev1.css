@@ -1,0 +1,46 @@
+/*odev a*/
+.btn{
+    font-size: x-large;
+    margin-left: 50px;
+    background-color: rgb(51, 50, 50);
+    color: whitesmoke;
+    border-radius:35px ;
+    padding: 10px 30px;
+}
+.btn:hover{
+    transform:  translateX(180%) ;
+    cursor: pointer;
+    background-color: rgb(255, 191, 0);
+    color: black;
+
+}
+
+/*odev b*/
+
+.urun{
+    font-size: x-large;
+    margin-left: 50px;
+    background-color: rgb(51, 50, 50);
+    color: whitesmoke;
+    width: 70px;
+    padding: 10px 30px;
+}
+
+
+.ul{
+    font-size: x-large;
+    margin-left: 50px;
+    width: 70px;
+  
+    background-color: whitesmoke(51, 50, 50);
+    color: black;
+    width: 70px;
+    padding: 10px 30px;
+    border: 1px solid;
+    margin-top: 0;
+    display: none;
+}
+.urun:hover +.ul{
+    display:block;
+    cursor: pointer;
+}

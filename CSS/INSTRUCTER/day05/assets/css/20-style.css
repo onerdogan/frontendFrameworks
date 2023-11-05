@@ -1,0 +1,14 @@
+h1{
+    color: blue;
+}
+.pEl{
+    color: royalblue;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    margin: 2rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(42, 165, 81);
+    font-size: 1.4rem;
+}

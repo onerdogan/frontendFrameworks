@@ -1,0 +1,13 @@
+h1{
+    color: red;
+    text-align: center;
+}
+.divEl{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(157, 9, 171);
+    transform: translate(70%);
+}
+.iphone14{
+    transform: rotate(-45deg) scaleX(1.4) translate(50%);
+}
