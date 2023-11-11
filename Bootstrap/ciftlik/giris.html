@@ -20,23 +20,47 @@
         color: azure;
         margin-bottom: 0px;
       }
+      h1{
+        font-weight:700;
+        font-size: 70px;
+      }
+      .btn-success{
+        font-size: x-large;
+        height: auto;
+        padding: 1rem;
+      }
+      .offcanvas-title{
+        font-size: xx-large;
+        color:  rgb(25, 55, 132);
+      }
+      .ürün{
+        width: 120px;
+      }
+      .birim{
+        width: 60px;
+      }
+      .forms{
+        margin-left: -10px;
+        text-align: start;
+      }
+    
     </style>
   </head>
-  <body class="mx-5">
+  <body class="mx-5" style="color:  rgb(25, 55, 132);">
     
    
     
 
 <!-- NAVBAR -->
     
-    <nav class="bg-success h-25 d-flex justify-content-between align-items-center fs-4">
+    <nav id="top" class="bg-success h-25  sticky-top d-flex justify-content-between align-items-center fs-4">
       <div >
        
         <div class="d-flex align-content-center align-items-center p-3 gap-3">
         <div class="m-0" > <img src="./img/figs2.jpg" width="50px" height="auto" alt="incir" class="mx-0"></div>
        
           <a href="#"><i class="fa-solid fa-phone"></i></a>
-          <p class="d-none d-md-block ">+90 252 282 53 80</p>
+          <p class="d-none d-md-block "></p>
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           <p class="d-none d-md-block"></p>
           
@@ -44,18 +68,24 @@
 
       </div>
       <!-- OFFCANVAS -->
-      <div>
+      <div id="top">
         <button 
         class="btn btn-success"
         data-bs-toggle="offcanvas"
         data-bs-target="#canvasincir">
         <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="offcanvas offcanvas-end" id="canvasincir">
+        <div class="offcanvas offcanvas-end bg-success" id="canvasincir">
             <div class="offcanvas-header">
-               <div class="offcanvas-title"><img src="./img/figs2.jpg" width="50px" height="auto" alt="incir">  Ürünlerimiz</div>
+               <div class="offcanvas-title"><img src="./img/figs2.jpg" width="50px" height="auto" alt="incir">  Çapçik ve Kardesi</div>
                 <button class="btn-close" type="button"
                 data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <video src="./video/kediler.mp4" height="auto" width="300" controls autoplay muted></video>
+              
+                <video src="./video/koyunlar.mp4" height="auto" width="300" autoplay muted loop></video>
+         
             </div>
             
         </div>
@@ -71,12 +101,780 @@
         
       </div>
     </nav>
-    <nav class="text-center bg-info p-2 fw-bolder sticky-top">
-        <div>
+    <!-- title -->
+    <nav class="text-center bg-white p-5 fw-bolder">
+        <div class="shadow p-3 bg-body-tertiary rounded">
             <h1>ÇİFTLİK İNCİRLİBELEN</h1>
         </div>
     </nav>
+    <!-- main zoon -->
+    <section class="d-flex justify-content-sm-start align-items-center py-5 bg-success-subtle">
+    <!-- left side button group-->
+    <div class="btn-group-vertical position-sticky" role="group" aria-label="Vertical button group">
+      <button type="button" class="btn btn-success "><a href="#satış" class="text-decoration-none text-white">Sipariş ve Satış</a></button>
+      
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Ürünlerimiz
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#ürün">Buğday</a></li>
+          <li><a class="dropdown-item" href="#ürün">Un</a></li>
+          <li><a class="dropdown-item" href="#ürün">Süt</a></li>
+          <li><a class="dropdown-item" href="#ürün">Peynir</a></li>
+          <li><a class="dropdown-item" href="#ürün">Tereğı</a></li>
+          <li><a class="dropdown-item" href="#ürün">Zeytinyağı</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Hayvan Dostlarımız
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#hayvan">İnek</a></li>
+          <li><a class="dropdown-item" href="#hayvan">Koyun</a></li>
+          <li><a class="dropdown-item" href="#hayvan">Tavuk</a></li>
+          <li><a class="dropdown-item" href="#hayvan">Keçi</a></li>
+          <li><a class="dropdown-item" href="#hayvan">Eşek</a></li>
+          <li><a class="dropdown-item" href="#hayvan">Kedi</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Bahçe ve Ekinlerimiz
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#bahçe">Zeytin</a></li>
+          <li><a class="dropdown-item" href="#bahçe">Kiraz</a></li>
+          <li><a class="dropdown-item" href="#bahçe">Karpuz</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Araçlarımız
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#araç">Traktör</a></li>
+          <li><a class="dropdown-item" href="#araç">İlaçlama</a></li>
+          <li><a class="dropdown-item" href="#araç">Süt Sağma</a></li>
+        </ul>
+        
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Bağlantılar
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#bağ">Tarım Kredi Kooparatifi</a></li>
+          <li><a class="dropdown-item" href="#bağ">Muğla BB</a></li>
+          <li><a class="dropdown-item" href="#bağ">Bakanlık</a></li>
+        </ul>
+        
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success" >
+          <a href="#Bilgi" class="text-decoration-none text-white">Bazı Bilgiler</a>
+        </button>
+      </div>
 
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-success" >
+          <a href="#Adres" class="text-decoration-none text-white">Adres ve İletişim</a>
+        </button>
+     
+    </div>
+  </div>
+    <!-- carousel -->
+    <div class="mx-5">
+      <div id="carouselHorses" class="carousel slide carousel-fade shadow" 
+      data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselHorses"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselHorses"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselHorses"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carouselHorses"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselHorses"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselHorses"
+      data-bs-slide-to="5"
+      aria-label="Slide 6"
+    ></button>
+      <button
+      type="button"
+      data-bs-target="#carouselHorses"
+      data-bs-slide-to="6"
+      aria-label="Slide 7"
+    ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000" >
+            <img
+              src="./img/bugday-500.jpg" 
+              class="d-block w-100"
+              alt="sakha-silgiita"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000"   >
+            <img
+              src="./img/ceviz-500.jpg" 
+              class="d-block w-100"
+              alt="marcelo-chagas"
+            />
+          </div>
+          <div class="carousel-item"  data-bs-interval="3000">
+            <img
+              src="./img/ilaclama-500.jpg"
+              class="d-block w-100"
+              alt="ming-zimik"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000"   >
+            <img
+              src="./img/incir-500.jpg "
+              class="d-block w-100"
+              alt="vinícius-vieira"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000"   >
+            <img
+              src="./img/yumurtaa-500.jpg "
+              class="d-block w-100"
+              alt="vinícius-vieira"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000"   >
+            <img
+              src="./img/koyunlar-500.jpg "
+              class="d-block w-100"
+              alt="vinícius-vieira"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000"   >
+            <img
+              src="./img/karpuz-500.jpg "
+              class="d-block w-100"
+              alt="vinícius-vieira"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselHorses"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselHorses"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <!-- sipariş - inputs -->
+  <section >
+    <div>
+       <!-- title -->
+       <div id="satış"></div><br>
+    <nav  class="text-center p-5 fw-bolder">
+      <div class="shadow p-3 bg-body-tertiary rounded">
+          <h2 >SİPARİŞ VE SATIŞ</h2>
+      </div>
+      <div class="shadow mt-3 p-3 bg-body-tertiary rounded">
+        <h6>Lütfen almak istediğiniz ürünlerin miktarını giriniz, satış dükkanlarımızın olduğu lokasyonları seçiniz, ödeme şeklini belirtiniz. </h6>
+      </div>
+    </nav>
+    <!-- form -->
+   
+
+    <form action="">
+      
+      <div class="container">
+        <div class="row">
+          <!-- left pictures -->
+        <div class=" col-5 ">
+          <img src="./img/süt-500.jpg" alt="süt" width="250" height="auto">
+          <img src="./img/bugday-500.jpg" alt="süt" width="250" height="auto">
+          <img src="./img/peynir.jpg" alt="süt" width="250" height="auto">
+          <img src="./img/tereyagi.jpg" alt="süt" width="250" height="auto">
+          <img src="./img/zeytinyagi.webp" alt="süt" width="250" height="auto">
+          <img src="./img/yumurtaa-500.jpg" alt="süt" width="250" height="auto">
+          <img src="./img/tam-bugday-unu-500.jpg" alt="süt" width="250" height="auto">
+        </div>
+
+
+        <div class=" col-5 ms-5 forms">
+         
+          
+          <!-- some inputs -->
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün " > İNEK SÜTÜ</span>
+            <span class="input-group-text text-danger birim"> 20 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">LİTRE</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">KEÇİ SÜTÜ</span>
+            <span class="input-group-text text-danger birim"> 40 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">LİTRE</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün ">YOĞURT</span>
+            <span class="input-group-text text-danger birim"> 30 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">KİLO</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">TEREYAĞI</span>
+            <span class="input-group-text text-danger birim"> 200 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">KİLO</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">YUMURTA</span>
+            <span class="input-group-text text-danger birim"> 3  tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">ADET</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">BUĞDAY</span>
+            <span class="input-group-text text-danger birim"> 10 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">KİLO</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">KEPEKLİ UN</span>
+            <span class="input-group-text text-danger birim"> 20 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">KİLO</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">ZEYTİNYAĞI</span>
+            <span class="input-group-text text-danger birim"> 200 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">LİTRE</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text ürün">CEVİZ</span>
+            <span class="input-group-text text-danger birim"> 100 tl</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">KİLO</span>
+          </div>
+          <div class="input-group mb-3">
+            <SPAN class="input-group-text text-bg-danger">TOPLAM</SPAN>
+            
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text text-danger">TÜRK LİRASI</span>
+          </div>
+          <!-- select -->
+          <div class="">
+            <label for="" class="form-label">DÜKKAN SEÇİNİZ</label>
+            <select class="form-select">
+            <option value="1"  >Muğla-Merkez</option>
+            <option value="2"  >Muğla-Kötekli</option>
+            <option value="3" >Milas</option>
+            <option value="4"  >Yatağan</option>
+            <option value="5"  >Bayır</option>
+           </select>
+            </div>
+            <!-- radio check -->
+            <div class=" fs-5 mt-3"> 
+              <label class="form-check-label" for="erkek">
+                Nasıl almak istersiniz? Ev teslimatında 10tl ek ücret ödenir
+               </label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="erkek" >
+              <label class="form-check-label" for="erkek">
+               Dükkandan alacağım
+              </label>
+              </div>
+              <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="kadin"  >
+              <label class="form-check-label" for="kadin">
+               Eve gelsin
+              </label>
+              </div>
+            </div>
+            
+          <!-- some inputs -->
+          <div class="m-3">
+            <label for="lastName" class="form-label">Ad Soyad</label>
+            <input
+              type="text"
+              id="lastName"
+              class="form-control form-control-lg"
+              required
+            />
+          </div>
+          <div class="m-3">
+            <label for="tel" class="form-label">Telefon</label>
+            <input
+              type="tel"
+              id="tel"
+              class="form-control form-control-lg"
+              required
+            >
+          </div>
+            <!-- submit button -->
+            <div>
+              <input class="btn btn-success" type="submit" value="KAYDET">
+            </div>
+          <!-- fadio buttons -->
+            <label class="text fs-3 mt-3" for="kart">ÖDEME:</label><br>
+            <div class="btn-group   " role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="kart" autocomplete="off" checked>
+              <label class="btn btn-outline-success fs-6" for="kart">Kredi Kartı</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="banka" autocomplete="off">
+              <label class="btn btn-outline-success fs-6" for="banka">Banka Havale</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="teslimat" autocomplete="off">
+              <label class="btn btn-outline-success fs-6" for="teslimat">Teslimatta</label>
+            </div>
+        
+
+         </div>
+        </div>
+      
+      </form>
+    </div>
+  </section>
+
+  <!-- cards -->
+  <section class="bg-success-subtle">
+
+    
+    <div id="ürün"></div><br>
+    <nav  class="text-center  p-5 fw-bolder">
+      <div class="shadow p-3 bg-body-tertiary rounded">
+          <h2 >ÜRÜNLERİMİZ</h2>
+      </div>
+      </nav>
+
+      <div class="container cardMenu mb-3">
+        <!-- first row -->
+        <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col">
+            <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+            <div class="card-header">Buğday</div>
+            <img src="./img/bugday-1188.jpg" class="card-img-top py-3" alt="buğday">
+            <div class="card-body">
+            <p class="card-text" style="color:  rgb(25, 55, 132);">Buğdaylarımız cumhuriyet, ata ve kara buğday tohumudur</p>
+            </div>
+            </div>
+            </div>
+         
+        
+          
+              <div class="col">
+              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+               <div class="card-header">Un</div>
+                <img src="./img/tam-bugday-unu-500.jpg" class="card-img-top h-25" alt="buğday">
+                <div class="card-body">
+               <p class="card-text" style="color:  rgb(25, 55, 132);">Unlarımız kendi yetiştirdiğimiz buğdaylardan üretilir</p>
+                </div>
+                </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                   <div class="card-header">Süt</div>
+                    <img src="./img/süt-500.jpg" class="card-img-top py-3" alt="buğday">
+                    <div class="card-body">
+                   <p class="card-text" style="color:  rgb(25, 55, 132);">Sütlerimiz kendi inek ve keçilerimizden üretilir. Eşek sütü belirli periodlarda elde edilir</p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+
+            <!-- second row -->
+            <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+              <div class="col">
+              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+              <div class="card-header">Peynir</div>
+              <img src="./img/peynir.jpg" class="card-img-top py-3" alt="buğday">
+              <div class="card-body">
+              <p class="card-text" style="color:  rgb(25, 55, 132);">Peynirlerimiz mandıramızda kendi sütlerimizden Bakanlığın denetiminden geçerek üretilir</p>
+              </div>
+              </div>
+              </div>
+           
+          
+            
+                <div class="col">
+                <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                 <div class="card-header">Tereyağı</div>
+                  <img src="./img/tereyagi.jpg" class="card-img-top" alt="buğday">
+                  <div class="card-body">
+                 <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                  </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                    <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                     <div class="card-header">Zeytiyağı</div>
+                      <img src="./img/zeytinyagi.webp" class="card-img-top w-100" alt="buğday">
+                      <div class="card-body">
+                     <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                      </div>
+                      </div>
+                      </div>
+              </div>
+          
+          </div>
+
+
+  </section>
+  <section class="">
+
+    
+    <div id="hayvan"></div><br>
+    <nav  class="text-center  p-5 fw-bolder">
+      <div class="shadow p-3 bg-body-tertiary rounded">
+          <h2 >HAYVAN DOSTLARIMIZ</h2>
+      </div>
+      </nav>
+
+      <div class="container cardMenu mb-3">
+        <!-- first row -->
+        <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col">
+            <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+            <div class="card-header">Kınalı ve Ardadaşları</div>
+            <img src="./img/cow-500.jpg" class="card-img-top " alt="buğday">
+            <div class="card-body">
+            <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+            </div>
+            </div>
+            </div>
+         
+        
+          
+              <div class="col">
+              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+               <div class="card-header">Şibil ve Arkadaşları</div>
+                <img src="./img/koyun.jpg" class="card-img-top" alt="buğday">
+                <div class="card-body">
+               <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                </div>
+                </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                   <div class="card-header">Bili ve Arkadaşları</div>
+                    <img src="./img/tavuk.jpg" class="card-img-top py-4" alt="buğday">
+                    <div class="card-body">
+                   <p class="card-text" style="color:  rgb(25, 55, 132);">Tavuklarımız yaklaşık 2000 metrekarelik alanda gezmektedir </p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+
+            <!-- second row -->
+            <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+              <div class="col">
+              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+              <div class="card-header">Kulaklı ve Arkadaşları</div>
+              <img src="./img/keçi.jpg" class="card-img-top" alt="buğday">
+              <div class="card-body">
+              <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+              </div>
+              </div>
+              </div>
+           
+          
+            
+                <div class="col">
+                <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                 <div class="card-header">Kahveli ve Arkadaşları</div>
+                  <img src="./img/donkey-500.jpg" class="card-img-top py-4" alt="buğday">
+                  <div class="card-body">
+                 <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                  </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                    <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                     <div class="card-header">Çapçik</div>
+                      <img src="./img/çapçik.jpg" class="card-img-top w-100" alt="buğday">
+                      <div class="card-body">
+                     <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                      </div>
+                      </div>
+                      </div>
+              </div>
+          
+          </div>
+
+
+  </section>
+
+  <section class="">
+
+    
+    <div id="bahçe"></div><br>
+    <nav  class="text-center  p-5 fw-bolder">
+      <div class="shadow p-3 bg-body-tertiary rounded">
+          <h2 >BAHÇE VE EKİNLERİMİZ</h2>
+      </div>
+      </nav>
+
+      <div class="container cardMenu mb-3">
+        <!-- first row -->
+        <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col">
+            <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+            <div class="card-header">Zeytin</div>
+            <img src="./img/Zeytin.jpg" class="card-img-top py-5" alt="buğday">
+            <div class="card-body">
+            <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+            </div>
+            </div>
+            </div>
+         
+        
+          
+              <div class="col">
+              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+               <div class="card-header">Kiraz</div>
+                <img src="./img/kiraz.webp" class="card-img-top" alt="buğday">
+                <div class="card-body">
+               <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                </div>
+                </div>
+                </div>
+
+
+
+                <div class="col">
+                  <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                   <div class="card-header">Karpuz</div>
+                    <img src="./img/karpuz-500.jpg" class="card-img-top py-5" alt="buğday">
+                    <div class="card-body">
+                   <p class="card-text" style="color:  rgb(25, 55, 132);"> </p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="">
+
+    
+          <div id="araç"></div><br>
+          <nav  class="text-center  p-5 fw-bolder">
+            <div class="shadow p-3 bg-body-tertiary rounded">
+                <h2 >ARAÇLARIMIZ</h2>
+            </div>
+            </nav>
+      
+            <div class="container cardMenu mb-3">
+              <!-- first row -->
+              <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                  <div class="col">
+                  <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                  <div class="card-header">Traktör</div>
+                  <img src="./img/traktör.jpg" class="card-img-top py-5" alt="buğday">
+                  <div class="card-body">
+                  <p class="card-text" style="color:  rgb(25, 55, 132);">Nerdeyse hayvan dostlarımız kadar severiz</p>
+                  </div>
+                  </div>
+                  </div>
+               
+              
+                
+                    <div class="col">
+                    <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                     <div class="card-header">İlaçlama</div>
+                      <img src="./img/ilaclama-500.jpg" class="card-img-top py-5" alt="buğday">
+                      <div class="card-body">
+                     <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                      </div>
+                      </div>
+                      </div>
+      
+      
+      
+                      <div class="col">
+                        <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                         <div class="card-header">Süt Sağma</div>
+                          <img src="./img/sutSagma.webp" class="card-img-top " alt="buğday">
+                          <div class="card-body">
+                         <p class="card-text" style="color:  rgb(25, 55, 132);"> </p>
+                          </div>
+                          </div>
+                          </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="">
+
+    
+                <div id="bağ"></div><br>
+                <nav  class="text-center  p-5 fw-bolder">
+                  <div class="shadow p-3 bg-body-tertiary rounded">
+                      <h2 >BAĞLANTILAR</h2>
+                  </div>
+                  </nav>
+            
+                  <div class="container cardMenu mb-3">
+                    <!-- first row -->
+                    <div  class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                                        
+                    
+                      
+                          <div class="col">
+                          <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                           <div class="card-header">Tarım Kredi Koop</div>
+                           <iframe src="https://www.tarimkredi.org.tr/" frameborder="0" height="400">TKK</iframe>
+                            <div class="card-body">
+                           <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                            </div>
+                            </div>
+                            </div>
+
+
+                            <div class="col">
+                              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                               <div class="card-header">Muğla BB</div>
+                               <iframe src="https://www.mugla.bel.tr/" frameborder="0" height="400">TKK</iframe>
+                                <div class="card-body">
+                               <p class="card-text" style="color:  rgb(25, 55, 132);"></p>
+                                </div>
+                                </div>
+                                </div>
+            
+            
+            
+                            <div class="col">
+                              <div class="card text-center shadow p-1 fs-5 bg-body-tertiary" style="width: 18rem; color:  rgb(25, 55, 132);">
+                               <div class="card-header">Tarım Bakanlığı</div>
+                               <iframe src="https://www.tarimorman.gov.tr/" frameborder="0" height="400">Bakanlık</iframe>
+                                <div class="card-body">
+                               <p class="card-text" style="color:  rgb(25, 55, 132);"> </p>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+                      </div>
+                    </section>
+
+
+
+     <section>
+
+      <div id="Bilgi"></div><br>
+                <nav  class="text-center  p-5 fw-bolder">
+                  <div class="shadow p-3 bg-body-tertiary rounded">
+                      <h2 >BAZI BİLGİLER</h2>
+                  </div>
+                  </nav>
+
+      <div class="card text-center m-2 pt-0 shadow fs-5 bg-body-tertiary" style="width: 50%; height: 75%; color:  rgb(25, 55, 132);">
+        <div class="card-header">YouTube</div>
+         <div class="card-body p-0">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0o8dFosHgdk?si=ZXyjd1RBSbPBeNdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+        
+         </div>
+         </div>
+<ul class="fs-2 m-4 " style="color: rgb(25, 55, 132);;">
+  <li><a href="https://apelasyon.com/yazi/101/akilli-hayvancilik-teknolojileri" target="_blank">Akıllı Hayvancılık Teknolojileri</a></li>
+  <li><a href="https://hitsoft.com.tr/tarimda-yapay-zeka-uygulamalari/?gclid=CjwKCAiA6byqBhAWEiwAnGCA4B_nvbVXa1CjgXiIpNrDpf0bnj3ZFlrvjoEEfI8JYC0Sf6JQZR4i1hoC2boQAvD_BwE" target="_blank">Tarımda Yapay Zeka Uygulamaları</a></li>
+</ul>
+     </section>   
+     
+     <section>
+
+      <div id="Adres"></div><br>
+                <nav  class="text-center  p-5 fw-bolder">
+                  <div class="shadow p-3 bg-body-tertiary rounded">
+                      <h2 >Adres ve İletişim</h2>
+                  </div>
+                  </nav>
+
+        <div class="container">
+          <div class="row">
+            <div class="col fs-2">
+              <ul class="mt-5 d-flex flex-column justify-content-between align-items-start">
+                <li>Alaşar Mahallesi, Yatağan MUĞLA 48999</li>
+                <li>Tel=0 252 282 53 80-0 555 555 55 55</li>
+                <li><a href="#">ciftlikincirlibelen@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col fs-2">
+              <h2>HARİTA</h2>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12692.193008340695!2d28.2309389!3d37.3176847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bf1392eb192cb5%3A0x8fd724cc9f030cee!2zxLBuY2lybGliZWxlbiBNZXphcmzEscSfxLEgQWxhxZ9hcg!5e0!3m2!1str!2str!4v1698418119045!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+          </div>
+        </div>
+       </section> 
+
+        <!-- right stiky -->
+        <div class="position relative">
+          <button class="position-fixed sticky-bottom z-1 end-0 bg-danger text-white p-3 rounded-3"> <a href="#" class=" text-decoration-none text-white">Kurbanlık Adaklık</a>
+               
+          </button>
+        </div>
+        <!-- left stiky -->
+       <div class="position-relative">
+        <button class="position-fixed  sticky-bottom z-2 start-0 bg-primary text-white p-3 rounded-3"> <a href="#" class=" text-decoration-none text-white">Sayfa Başı</a>
+             
+        </button>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
+
